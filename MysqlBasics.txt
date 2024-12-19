@@ -1,0 +1,111 @@
+basic MySQL commands to help you interact with a MySQL database:
+
+### 1. **Connect to a MySQL database:**
+```bash
+mysql -u username -p
+```
+- Replace `username` with your MySQL username.
+- It will prompt you to enter the password.
+
+---
+
+### 2. **Show Databases:**
+```bash
+SHOW DATABASES;
+```
+- Lists all databases available in the MySQL server.
+
+---
+
+### 3. **Create a Database:**
+```bash
+CREATE DATABASE database_name;
+```
+
+---
+
+### 4. **Use a Database:**
+```bash
+USE database_name;
+```
+- Select the database to work with.
+
+---
+
+### 5. **Show Tables in a Database:**
+```bash
+SHOW TABLES;
+```
+
+---
+
+### 6. **Create a Table:**
+```bash
+CREATE TABLE table_name (
+    column1_name column1_type,
+    column2_name column2_type,
+    ...
+);
+```
+- Example:
+```bash
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(255)
+);
+```
+
+---
+
+### 7. **Insert Data into a Table:**
+```bash
+INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);
+```
+- Example:
+```bash
+INSERT INTO users (name, email, password) VALUES ('John Doe', 'john@example.com', 'password123');
+```
+
+---
+
+### 8. **Select Data from a Table:**
+```bash
+SELECT * FROM table_name;
+```
+- Example:
+```bash
+SELECT * FROM users;
+```
+
+---
+
+### 9. **Update Data:**
+```bash
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+```
+- Example:
+```bash
+UPDATE users SET email = 'john.doe@example.com' WHERE id = 1;
+```
+
+---
+
+### 10. **Delete Data:**
+```bash
+DELETE FROM table_name WHERE condition;
+```
+- Example:
+```bash
+DELETE FROM users WHERE id = 1;
+```
+
+---
+
+### 11. **Drop a Table:**
+```bash
+DROP TABLE table_name;
+```
+
+---
