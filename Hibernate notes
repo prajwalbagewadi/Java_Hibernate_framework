@@ -1,0 +1,49 @@
+Hibernate notes
+
+Hibernate is a popular Java framework designed to simplify the development of applications that interact with databases. 
+1. It is an open-source, lightweight ORM (Object-Relational Mapping) tool that implements the Java Persistence API (JPA),
+2. allowing developers to map Java objects to database tables seamlessly.
+
+1. What is ORM?
+	An ORM tool bridges the gap between object-oriented programming and relational databases. It maps Java objects to relational 	database tables, enabling easy data manipulation, creation, and access.
+
+	How does Hibernate fit in?
+		Hibernate automatically maps Java classes to database tables, allowing developers to work with objects rather than SQL.
+
+2. JPA (Java Persistence API)
+Definition: JPA is a Java specification that provides a set of standards for ORM tools, allowing them to persist data.
+Why is JPA important?
+JPA ensures that Hibernate follows a consistent structure and provides common interfaces for performing CRUD (Create, Read, Update, Delete) operations in a database.
+
+### Copy Format for Advantages of Hibernate Framework
+
+**Open Source and Lightweight**  
+- Hibernate is freely available under the LGPL license.  
+- It’s lightweight, meaning it consumes minimal system resources.  
+
+---
+
+**Fast Performance**  
+- Hibernate uses a cache mechanism (First-level and Second-level cache) to enhance performance.  
+- First-level cache is enabled by default, reducing database access by storing frequently accessed data.  
+
+---
+
+**Database Independent Query**  
+- Hibernate Query Language (HQL) abstracts SQL queries and allows developers to write object-oriented queries.  
+- This leads to reduced maintenance as there’s no need to update queries if the underlying database changes.  
+
+---
+
+**Automatic Table Creation**  
+- Hibernate automatically creates database tables for the mapped entities, eliminating the need to manually create tables.  
+
+---
+
+**Simplifies Complex Joins**  
+- Fetching data from multiple tables is simplified using Hibernate's powerful querying capabilities.  
+
+---
+
+**Provides Query Statistics and Database Status**  
+- Hibernate supports query cache and provides statistics on query performance and database status.  
