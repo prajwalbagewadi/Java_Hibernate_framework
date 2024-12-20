@@ -47,3 +47,22 @@ JPA ensures that Hibernate follows a consistent structure and provides common in
 
 **Provides Query Statistics and Database Status**  
 - Hibernate supports query cache and provides statistics on query performance and database status.  
+
+
+Hibernate Theory
+
+**class
+class Bank{
+private int acc_no
+private string acc_name
+private int acc_bal
+private int acc_pin
+}
+
+**database
+{
+mysql
+postgres
+}
+
+(Program.java) -> JDBC -> (Database.mysql)
